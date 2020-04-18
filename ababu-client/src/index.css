@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* root variables */
+:root{
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --light: #f8f9fa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* *{
+    border: 1px solid red;
+} */
+body{
+    background-color: var(--light);
+}
+
+/* style logo */
+.logo-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.logo-image img{
+    border-radius: 20px;
+    border: 2px solid var(--warning)
+}
+
+/* style headers */
+h1{
+    margin: 10px auto;
+    text-align: center;
+}
+/* style nav */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+.navbar li{
+    margin: 10px;
+}
+/* media query for narrower broswer */
+
+/* content sections */
+.content-div{
+    width: 80%;
+    margin: 5vh auto;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--danger);
+}
+.content-head{
+    font-size: 48px;
+    margin: 10px auto;
+    color: red;
+}
+.content-main{
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid var(--warning)
+}
+.content-div ul{
+    text-align: center;
+    list-style: inside;
+    margin: 5px auto;
+    font-size: 24px;
+}
+.content-div p{
+    width: 85%;
+    margin: 15px auto;
+}
+
+/* faq cards */
+.faq-container{
+    display: flex;
+    flex-direction: row;
+}
+.faq-question{
+    height: 25%;
+    width: 50%;
+    border-radius: 30px;
+    margin: 10px 0;
+}
+.faq-heading{
+    height: 20%;
+}
+.faq-answer{
+    font-size: 18px;
+    background: white;
+    color: black;
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 21px;
+    border: 4px solid black;
 }
