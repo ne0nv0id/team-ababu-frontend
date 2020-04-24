@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 // import './App.css'
+import MainCarousel from './MainCarousel'
+import InstaFeed from './InstaFeed'
 
 class Landing extends Component {
 
@@ -7,6 +9,8 @@ class Landing extends Component {
         return(
             <div className="container">
                 <h1>Landing</h1>
+                <MainCarousel/>
+                <InstaFeed/>
             </div>
         )
     }

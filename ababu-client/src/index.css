@@ -3,6 +3,8 @@
     --danger: #dc3545;
     --warning: #ffc107;
     --light: #f8f9fa;
+    --dark: #343a40;
+    --secondary: #6c757d;
 }
 
 
@@ -12,13 +14,17 @@
 body{
     background-color: var(--light);
 }
-
+/* .app-main{
+    background: red;
+} */
 /* style logo */
 .logo-image{
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    margin: 10px auto;
+
 }
 .logo-image img{
     border-radius: 20px;
@@ -39,6 +45,33 @@ h1{
 .navbar li{
     margin: 10px;
 }
+.footer{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: var(--secondary);
+    color: white;
+}
+.footer-p{
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+}
+
+/* Style landing page */
+
+.insta-feed{
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+.insta-post{
+    display: flex;
+    border-radius: 4px;
+}
+
 /* media query for narrower broswer */
 
 /* content sections */
@@ -94,7 +127,45 @@ h1{
     color: black;
     width: 100%;
     padding: 15px;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 21px;
     border: 4px solid black;
+}
+
+/* contact */
+.contact-list{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.list-group-item{
+    background-color: var(--dark);
+    color: var(--danger);
+    border: 1px solid white;
+}
+
+form{
+    padding: 15px;
+    color: white;
+}
+/* input{
+    border: 2px solid var(--warning)
+} */
+.form-div{
+    background-color: var(--dark);
+    border-radius: 20px;
+    border: 4px solid var(--warning);
+    margin: 5vh auto;
+}
+.input-group{
+    display: flex;
+    justify-content: space-around;
+}
+.input-group input{
+    border: 3px solid;
+    font-weight: bold;
+}
+.form-group{
+    justify-content: center;
 }
