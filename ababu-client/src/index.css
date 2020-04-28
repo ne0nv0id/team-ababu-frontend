@@ -71,6 +71,13 @@ h1{
     display: flex;
     border-radius: 4px;
 }
+iframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: 360px;
+}
 
 /* media query for narrower broswer */
 
@@ -134,7 +141,6 @@ h1{
 
 /* contact */
 .contact-list{
-    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -147,15 +153,41 @@ h1{
 
 form{
     padding: 15px;
-    color: white;
+    color: black;
+    font-weight: bold;
+}
+.form-control{
+    border: 2px solid black;
+}
+
+.packages-contact{
+    width: 60%;
+    margin: 10px auto;
+
+}
+
+.packages-table{
+    width: 80%;
+    margin: 10px auto;
+}
+table{
+    border: 5px solid var(--danger);
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: center;
+}
+tr{
+}
+td{
+    font-size: 18px;
 }
 /* input{
     border: 2px solid var(--warning)
 } */
 .form-div{
-    background-color: var(--dark);
+    background-color: lightgrey;
     border-radius: 20px;
-    border: 4px solid var(--warning);
+    border: 4px solid var(--danger);
     margin: 5vh auto;
 }
 .input-group{

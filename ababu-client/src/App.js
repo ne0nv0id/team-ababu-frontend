@@ -1,8 +1,11 @@
 import React, {Component} from 'react'
 // import './App.css'
 
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+import Nav from './components/layout/Nav'
+import Footer from './components/layout/Footer'
+import Header from './components/layout/Header'
+import InstaFeed from './components/inserts/InstaFeed'
+
 import logo from './components/images/tzo_logo.jpg'
 
 class App extends Component {
@@ -11,9 +14,8 @@ class App extends Component {
         return(
             <>
             <div className="container app-main">
-                <div className="logo-image">
-                    <img src={logo} alt="TZO Entertainment Logo"/>
-                </div>
+                <Header/>
+                <InstaFeed/>
                 <Nav/>
 
             </div>

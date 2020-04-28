@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-import About from './About'
-import Contact from './Contact'
-import Faq from './Faq'
-import Landing from './Landing'
+import About from '../pages/About'
+// import Contact from '../pages/Contact'
+import Packages from '../pages/Packages'
+import Faq from '../pages/Faq'
+import Landing from '../pages/Landing'
 
 class Nav extends Component{
     render(){
@@ -19,7 +20,7 @@ class Nav extends Component{
                             <Link className="btn btn-danger" to="/about">About</Link>
                         </li>
                         <li>
-                            <Link className="btn btn-danger" to="/contact">Contact</Link>
+                            <Link className="btn btn-danger" to="/packages">Packages</Link>
                         </li>
                         <li>
                             <Link className="btn btn-danger" to="/faq">FAQ</Link>
@@ -30,7 +31,7 @@ class Nav extends Component{
                 <div className="container-fluid content-section">
                     <Route path="/" exact component={Landing}/>
                     <Route path="/about" exact component={About}/>
-                    <Route path="/contact" exact component={Contact}/>
+                    <Route path="/packages" exact component={Packages}/>
                     <Route path="/faq" exact component={Faq}/>
                 </div>
             </Router>

@@ -14,6 +14,12 @@ class MainCarousel extends Component {
                     <div>
                         <img src={pic1} alt="image"/>
                     </div>
+                    <div>
+                        <img src={pic1} alt="image"/>
+                    </div>
+                    <div>
+                        <img src={pic1} alt="image"/>
+                    </div>
 
                 </Carousel>
             </div>
