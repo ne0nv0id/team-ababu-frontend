@@ -6,37 +6,58 @@
     --dark: #343a40;
     --secondary: #6c757d;
 }
-
-
-/* *{
-    border: 1px solid red;
-} */
 body{
     background-color: var(--light);
 }
-/* .app-main{
-    background: red;
-} */
-/* style logo */
-.logo-image{
-    width: 100%;
-    height: auto;
+
+/* STYLE HEADER */
+
+.site-head{
+    width: 43%;
+    height: 20%;
+    margin: 30px auto;
+    border-radius: 8px;
+    border: 3px solid var(--danger);
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 10px auto;
-
 }
-.logo-image img{
-    border-radius: 20px;
-    border: 2px solid var(--warning)
+.site-head-header{
+    display: flex;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    /* border: 1px solid blue; */
 }
+.site-head-header h2{
+    padding: 0 10px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.emblem{
+    display: flex;
+    width: 25%;
+    height: 22%;
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
+    /* Mobile Header query */
+    @media only screen and (max-width:800px){
+        .site-head{
+            width: 100%;
+        }
+        .site-head-header h2{
+            font-size: 24px;
+        }
+    }
 
-/* style headers */
+/* STYLE PAGE ELEMENTS */
 h1{
     margin: 10px auto;
     text-align: center;
+    font-family: 'Cinzel', serif;
 }
-/* style nav */
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -56,12 +77,24 @@ h1{
     font-size: 12px;
     padding: 3px;
     text-align: center;
+    margin: auto;
 }
+    @media only screen and (max-width:800px){
+        .navbar-expand-lg, .navbar{
+            padding: 0;
+        }
+        .container{
+            max-width: 800px;
+        }
+        h1{
+            font-size: 36px;
+        }
+    }
 
-/* Style landing page */
+/* STYLE LANDING INSTA FEED */
 
 .insta-feed{
-    width: 100%;
+    width: 90%;
     display: flex;
     height: auto;
     margin: 20px auto;
@@ -79,16 +112,34 @@ iframe{
     height: 360px;
 }
 
-/* media query for narrower broswer */
+/* STYLE LANDING PAGE ELEMENTS */
+.landing-packages{
+    width: 75%;
+    height: 400px;
+    margin: 30px auto;
+    background-color: var(--dark);
+    color: white;
+    border-radius: 10px;
+    border: 4px solid var(--danger);
+}
+.landing-packages h1{
+    margin: auto;
+    padding: 150px 0;
+}
+    @media only screen and (max-width:800px){
+        .landing-packages{
+            width: 100%;
+        }
+    }
 
-/* content sections */
+/* STYLE CONTENT SECTIONS */
 .content-div{
     width: 80%;
     margin: 5vh auto;
-    border: 3px solid black;
+    border: 3px solid var(--danger);
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--danger);
+    background-color: var(--dark);
 }
 .content-head{
     font-size: 48px;
@@ -96,12 +147,11 @@ iframe{
     color: red;
 }
 .content-main{
-    width: 90%;
-    margin: 25px auto;
+    width: 95%;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
     background-color: white;
-    border: 2px solid var(--warning)
 }
 .content-div ul{
     text-align: center;
@@ -113,44 +163,52 @@ iframe{
     width: 85%;
     margin: 15px auto;
 }
+    @media only screen and (max-width:800px){
+        .content-div{
+            width: 100%;
+        }
+        .content-main{
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+        }
+        .content-div p{
+            font-size: 15px;
+        }
+        .content-div ul{
+            font-size: 12px;
+            text-align: left;
+        }
+    }
 
-/* faq cards */
+/* STYLE FAQ BLOCKS */
 .faq-container{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-}
-.faq-question{
-    height: 25%;
-    width: 50%;
-    border-radius: 30px;
-    margin: 10px 0;
-}
-.faq-heading{
-    height: 20%;
-}
-.faq-answer{
-    font-size: 18px;
-    background: white;
-    color: black;
-    width: 100%;
-    padding: 15px;
     margin: 20px auto;
-    border-radius: 21px;
-    border: 4px solid black;
-}
-
-/* contact */
-.contact-list{
-    width: 100%;
-    display: flex;
     justify-content: space-around;
 }
-.list-group-item{
-    background-color: var(--dark);
-    color: var(--danger);
-    border: 1px solid white;
+.card{
+    max-width: 14rem;
+    max-height: 14rem;
+    overflow: auto;
 }
+.card-text{
+    font-size: 18px;
+}
+    @media only screen and (max-width:800px){
+        .faq-container{
+            flex-direction: column;
+        }
+        .card{
+        }
+        .card-text {
+            font-size: 12px;
+        }
+    }
 
+/* CONTACT FORM */
 form{
     padding: 15px;
     color: black;
@@ -159,31 +217,10 @@ form{
 .form-control{
     border: 2px solid black;
 }
-
 .packages-contact{
     width: 60%;
     margin: 10px auto;
-
 }
-
-.packages-table{
-    width: 80%;
-    margin: 10px auto;
-}
-table{
-    border: 5px solid var(--danger);
-    border-collapse: separate;
-    border-radius: 10px;
-    text-align: center;
-}
-tr{
-}
-td{
-    font-size: 18px;
-}
-/* input{
-    border: 2px solid var(--warning)
-} */
 .form-div{
     background-color: lightgrey;
     border-radius: 20px;
@@ -201,3 +238,44 @@ td{
 .form-group{
     justify-content: center;
 }
+::-webkit-input-placeholder{
+    font-size: 20px;
+}
+    @media only screen and (max-width:800px){
+        form{
+            padding: 5px;
+            font-size: 18px;
+        }
+        ::-webkit-input-placeholder{
+            font-size: 18px;
+        }
+        .input-group input{
+            border: 1.5px solid;
+            font-weight: bold;
+        }
+        .packages-contact{
+            width: 100%;
+        }
+    }
+
+/* STYLE PACKAGES TABLE */
+table{
+    border: 5px solid var(--danger);
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: center;
+}
+tr{
+}
+td{
+    font-size: 18px;
+}
+.packages-table{
+    width: 80%;
+    margin: 10px auto;
+}
+    @media only screen and (max-width:800px){
+        .packages-table{
+            width: 100%;
+        }
+    }

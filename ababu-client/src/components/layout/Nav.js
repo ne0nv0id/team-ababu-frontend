@@ -7,34 +7,60 @@ import Packages from '../pages/Packages'
 import Faq from '../pages/Faq'
 import Landing from '../pages/Landing'
 
+// import InstaFeed from '../inserts/InstaFeed'
+
 class Nav extends Component{
+
+
     render(){
         return(
-            <Router>
-                <div className="navbar navbar-expand-lg">
-                    <ul className="nav nav-tabs">
-                        <li>
-                            <Link className="btn btn-danger" to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link className="btn btn-danger" to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link className="btn btn-danger" to="/packages">Packages</Link>
-                        </li>
-                        <li>
-                            <Link className="btn btn-danger" to="/faq">FAQ</Link>
-                        </li>
-                    </ul>
-                </div>
+            <>
+                <Router>
+                    <div className="navbar navbar-expand-lg">
+                        <ul className="nav nav-tabs btn-group" role="group">
+                            <li>
+                                <Link to={{
+                                    pathname: '/',
+                                    state: {
+                                        docTitle: 'TZO Strength'
+                                    }
+                                }} className="btn btn-danger btn-responsive">Home</Link>
+                            </li>
+                            <li>
+                                <Link to={{
+                                    pathname: '/about',
+                                    state: {
+                                        docTitle: 'About Abiy'
+                                    }
+                                }} className="btn btn-danger btn-responsive">About</Link>
+                            </li>
+                            <li>
+                                <Link to={{
+                                    pathname: '/packages',
+                                    state: {
+                                        docTitle: 'Coaching Packages'
+                                    }
+                                }} className="btn btn-danger btn-responsive">Packages</Link>
+                            </li>
+                            <li>
+                                <Link to={{
+                                    pathname: '/faq',
+                                    state: {
+                                        docTitle: 'TZO FAQ'
+                                    }
+                                }} className="btn btn-danger btn-responsive">FAQ</Link>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div className="container-fluid content-section">
-                    <Route path="/" exact component={Landing}/>
-                    <Route path="/about" exact component={About}/>
-                    <Route path="/packages" exact component={Packages}/>
-                    <Route path="/faq" exact component={Faq}/>
-                </div>
-            </Router>
+                    <div className="container-fluid content-section">
+                        <Route path="/" exact component={Landing}/>
+                        <Route path="/about" exact component={About}/>
+                        <Route path="/packages" exact component={Packages}/>
+                        <Route path="/faq" exact component={Faq}/>
+                    </div>
+                </Router>
+            </>
         )
     }
 }

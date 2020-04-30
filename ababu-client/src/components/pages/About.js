@@ -2,11 +2,15 @@ import React, {Component} from 'react'
 // import './App.css'
 
 class About extends Component {
+    componentDidMount(){
+        console.log(this.props.location.state)
+        document.title = this.props.location.state.docTitle
+    }
 
     render(){
         return(
             <>
-                <h1 className="display-5">About TZO</h1>
+                <h1 className="display-5">About Abiy</h1>
                 <div className="content-div">
 
                     <article className="content-main">
