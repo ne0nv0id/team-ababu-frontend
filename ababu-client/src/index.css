@@ -200,6 +200,7 @@ iframe{
     @media only screen and (max-width:800px){
         .faq-container{
             flex-direction: column;
+            align-items: center;
         }
         .card{
         }
