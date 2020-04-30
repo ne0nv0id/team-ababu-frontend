@@ -45,9 +45,9 @@ class Faq extends Component {
                         </div>
                     </div>
                     <div className="card text-white bg-danger mb-3">
-                        <div className="card-header">Type of feedback and response time?</div>
+                        <div className="card-header">How many clients do you have?</div>
                         <div className="card-body">
-                            <p className="card-text">My clients have my phone number, email and Instagram so if you were to have a question as a client any of those methods can be utilized to get a hold of me(ideally text or instagram). I try to respond within a day of the messages being sent if I'm busy but normally if I see the message and have the time to provide a useful response I will.</p>
+                            <p className="card-text">I only accept as many lifters as I know I can provide a quality service to. If you want a specific number feel free to ask me directly.</p>
                         </div>
                     </div>
                 </div>
