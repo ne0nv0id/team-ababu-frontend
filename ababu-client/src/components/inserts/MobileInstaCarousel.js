@@ -15,6 +15,7 @@ class MobileInstaCarousel extends Component{
                     Carousel infiniteLoop showThumbs={false} showArrows={false}
                     showIndicators={false}
                     swipeable={true}
+                    showStatus={false}
                     useKeyboardArrows
                     autoPlay
                 >
