@@ -18,16 +18,16 @@ class MobileInstaCarousel extends Component{
                     useKeyboardArrows
                     autoPlay
                 >
-                    <div>
+                    <div className="carousel-img">
                         <img src={img1} alt="Abiy, his client Christian, and his client/co-handler Miguel"/>
                     </div>
-                    <div>
+                    <div className="carousel-img">
                         <img src={img2} alt="Abiy and 3 of his clients after the MD state championships"/>
                     </div>
                     <div>
                         <img src={img3} alt="Abiy and friends at his home gym, Chiseled Life"/>
                     </div>
-                    <div>
+                    <div className="carousel-img">
                         <img src={img4} alt="Abiy and Sammy congradulating his client James on a meet well done."/>
                     </div>
                 </Carousel>

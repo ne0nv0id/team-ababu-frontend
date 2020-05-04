@@ -7,7 +7,7 @@
     --secondary: #6c757d;
 }
 body{
-    background-color: var(--light);
+    background-color: var(--dark);
 }
 
 /* STYLE HEADER */
@@ -35,12 +35,12 @@ body{
 }
 .emblem{
     display: flex;
-    width: 25%;
-    height: 22%;
+    width: 21%;
+    height: 218%;
     border-radius: 8px;
     margin-top: 4px;
     margin-bottom: 4px;
-    border: 1px solid black;
+    border: 2px solid var(--danger);
 }
     /* Mobile Header query */
     @media only screen and (max-width:800px){
@@ -154,6 +154,7 @@ iframe{
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
+    color: black;
     background-color: white;
 }
 .content-div ul{
@@ -196,6 +197,7 @@ iframe{
     max-width: 14rem;
     max-height: 14rem;
     overflow: auto;
+    border: 2px solid white;
 }
 .card-text{
     font-size: 18px;

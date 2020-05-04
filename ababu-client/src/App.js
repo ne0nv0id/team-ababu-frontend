@@ -22,7 +22,7 @@ class App extends Component {
     render(){
         return(
             <>
-            <div className="container app-main">
+            <div className="container app-main bg-dark text-white">
                 <Header/>
 
                 <Nav pageTitle={this.state.pageTitle}/>

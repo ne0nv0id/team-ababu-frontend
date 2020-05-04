@@ -5,31 +5,48 @@ class MobilePackages extends Component{
         return(
             <div className="faq-container">
                 <div className="card text-white bg-dark mb-3">
-                    <div className="card-header">Nutrition Only</div>
+                    <div className="card-header text-center">Nutrition Only</div>
                     <div className="card-body">
-                        <h6 className="card-subtitle mb-1">$55/block</h6>
-                        <p className="card-text">Learn how to take control of your nutrition with tracking macro nutrients. I will be available for check-ins and can adjust for pre-existing conditions, odd work hours, or other circumstances.</p>
+                        <h6 className="card-subtitle mb-1 text-center">$55/block</h6>
+                        <ul className="card-text">
+                            <li>Learn to track macros</li>
+                            <li>Check-ins via text and scheduled calls</li>
+                            <li>Consideration of dietary restrictions and health conditions</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="card text-white bg-danger mb-3">
-                    <div className="card-header">Custom Programming</div>
+                    <div className="card-header text-center">Custom Programming</div>
                     <div className="card-body">
-                        <h6 className="card-subtitle mb-1">$100/block</h6>
-                        <p className="card-text">Along with nutrition coaching, I will be writing an individual program for you tailored to your strength goals. My clients are given my personal number, email, and Instagram for consistent feedback on how they are doing.</p>
+                        <h6 className="card-subtitle mb-1 text-center">$100/block</h6>
+                        <ul className="card-text">
+                            <li>Inclusive of Nutrition</li>
+                            <li>Individual program tailored to your strength goals</li>
+                            <li>Consistent feedback via text/email/Instagram</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="card text-white bg-dark mb-3">
-                    <div className="card-header">Programming + Video</div>
+                    <div className="card-header text-center">Programming + Video</div>
                     <div className="card-body">
-                        <h6 className="card-subtitle mb-1">$150/block</h6>
-                        <p className="card-text">Inclusive of Programming and Nutrition. At the end of each block in your programming, we will schedule a video call check-in to assess your progression and your goals in detail.</p>
+                        <h6 className="card-subtitle mb-1 text-center">$150/block</h6>
+                        <ul className="card-text">
+                            <li>Inclusive of Custom Programming</li>
+                            <li>Video check-in at the end of every block to discuss changes in program, reassessment of goals, etc.</li>
+                            <li>Check-in calls scheduled via my calendar</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="card text-white bg-danger mb-3">
-                    <div className="card-header">Meet Prep Only</div>
+                    <div className="card-header text-center">Meet Prep Only</div>
                     <div className="card-body">
-                        <h6 className="card-subtitle mb-1">$200/block</h6>
-                        <p className="card-text">Meet prep only programming is for short-term clients who are specifically looking for me to guide them through their meet. This includes meet-day handling and will be different for every client. Contact me for more details.</p>
+                        <h6 className="card-subtitle mb-1 text-center">$200/block</h6>
+                        <ul className="card-text">
+                            <li>Inclusive of Custom Programming + Video</li>
+                            <li>Short-term programming to lead you through your meet</li>
+                            <li>Meet day handling</li>
+                            <li>Check-in frequency TBD, contact me for details</li>
+                        </ul>
                     </div>
                 </div>
             </div>
