@@ -3,7 +3,8 @@ import React, {Component} from 'react'
 // import MainCarousel from './MainCarousel'
 import InstaFeed from '../inserts/InstaFeed'
 import MobileInstaCarousel from '../inserts/MobileInstaCarousel'
-import CoachingPackages from '../inserts/CoachingPackages'
+// import CoachingPackages from '../inserts/CoachingPackages'
+import BrandStatement from '../inserts/BrandStatement'
 
 class Landing extends Component {
 
@@ -22,7 +23,7 @@ class Landing extends Component {
                     ? <InstaFeed/>
                     : <MobileInstaCarousel/>
                 }
-                <CoachingPackages/>
+                <BrandStatement/>
             </div>
         )
     }
