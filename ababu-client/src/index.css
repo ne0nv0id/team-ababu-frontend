@@ -309,3 +309,9 @@ td{
     border: 2px solid red;
     color: var(--dark)
 }
+    @media only screen and (max-width:800px){
+        .list-group a{
+            width: 5rem;
+            font-size: 14px;
+        }
+    }
