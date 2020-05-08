@@ -3,13 +3,15 @@ import React, {Component} from 'react'
 class ContactLinks extends Component{
     render(){
         return(
-            <div className="contact-list">
-                    <div className="list-group list-group-horizontal">
-                        <a className="list-group-item" href="#" target="_blank">LinkedIn</a>
-                        <a className="list-group-item" href="#" target="_blank">GitHub</a>
-                        <a className="list-group-item" href="#" target="_blank">Blog</a>
-                    </div>
-            </div>
+            <>
+                <h3 className = "contact-head">Contact me via:</h3>
+                <div className="contact-list">
+                        <ul class="list-group list-group-horizontal-sm">
+                            <a className="list-group-item" href="https://www.instagram.com/abiyababu/" target="_blank">Instagram</a>
+                            <a className="list-group-item" href="mailto:vikram.sharma1024@gmail.com" target="_blank">Email</a>
+                        </ul>
+                </div>
+            </>
         )
     }
 }

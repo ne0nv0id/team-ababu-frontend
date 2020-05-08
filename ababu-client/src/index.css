@@ -292,3 +292,20 @@ td{
             width: 100%;
         }
     }
+
+/* CONTACT LINKS */
+.contact-head{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+.contact-list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.list-group a{
+    width: 7rem;
+    text-align: center;
+    border: 2px solid red;
+    color: var(--dark)
+}

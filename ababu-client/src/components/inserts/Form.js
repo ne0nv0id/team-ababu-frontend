@@ -20,7 +20,7 @@ class Form extends Component{
     render(){
         return(
             <div className="form-div">
-                <form action="mailto:vikram.sharma1024@gmail.com" method="post" encType="text/plain">
+                <form action="/index/php" method="post" encType="text/plain">
                         <div className="form-group row">
                             <label htmlFor="name" className="col-sm-2 col-form-label">Name: </label>
                             <div className="col-sm-6">

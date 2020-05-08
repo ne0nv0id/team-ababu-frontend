@@ -2,15 +2,14 @@ import React, {Component} from 'react'
 // import './App.css'
 
 import Form from '../inserts/Form'
-// import ContactLinks from '../inserts/ContactLinks'
+import ContactLinks from '../inserts/ContactLinks'
 import PackagesTable from '../inserts/PackagesTable'
 import MobilePackages from '../inserts/MobilePackages'
 
 class Packages extends Component {
 
     componentDidMount(){
-        console.log(this.props.location);
-        document.title = this.props.location.state.docTitle
+        document.title = 'Coaching Packages'
     }
 
     render(){
@@ -26,9 +25,11 @@ class Packages extends Component {
                     }
                 </div>
 
-                <div className="packages-contact">
+                <ContactLinks/>
+
+                {/*<div className="packages-contact">
                     <Form/>
-                </div>
+                </div>*/}
 
             </div>
         )
