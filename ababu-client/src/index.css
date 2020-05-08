@@ -191,10 +191,10 @@ iframe{
     flex-wrap: wrap;
     flex-direction: row;
     margin: 20px auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .card{
-    max-width: 14rem;
+    max-width: 20rem;
     max-height: 14rem;
     overflow: auto;
     border: 2px solid white;
